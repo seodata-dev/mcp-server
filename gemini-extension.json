@@ -1,0 +1,10 @@
+{
+  "name": "seodata",
+  "version": "1.0.0",
+  "description": "Keyword search volume, CPC, competition and similar keywords for 50+ countries.",
+  "mcpServers": {
+    "seodata": {
+      "httpUrl": "https://mcp.seodata.dev/mcp"
+    }
+  }
+}

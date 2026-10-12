@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.seodata/keywords",
+  "title": "seodata.dev: keyword search volume",
+  "description": "Keyword search volume, CPC, competition and similar keywords for 50+ countries.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.seodata.dev/mcp",
+  "repository": {
+    "url": "https://github.com/seodata-dev/mcp-server",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://www.seodata.dev/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.seodata.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Works without auth at 20 lookups a day. Send `Bearer <your seodata.dev API key>` (sd_live_…) for your plan's limits, or sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
